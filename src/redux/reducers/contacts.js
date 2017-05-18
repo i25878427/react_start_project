@@ -8,6 +8,6 @@ const defaultState = {
 export default handleActions({
   [ACTIONS.GET_CONTACTS]: (state, { payload }) => {
     debugger
-    return { ...state.contacts, ...payload.contacts }
+    return { ...state }
   }
 }, defaultState)

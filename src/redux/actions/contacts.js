@@ -11,7 +11,7 @@ const allContactsActions = (dispatch) => ({
     debugger
     const contacts = document.getElementById('myAccountsField').value
     debugger
-    dispatch(getContactsSuccess({contacts: contacts}))
+    dispatch(getContactsSuccess({contacts}))
   }
 })
 export default allContactsActions
