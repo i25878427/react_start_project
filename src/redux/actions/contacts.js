@@ -10,10 +10,11 @@ const allContactsActions = (dispatch) => ({
 
     debugger
     const contacts = document.getElementById('myAccountsField').value
+    const contactsObject = JSON.parse(contacts)
     console.log('aaaaa')
     console.log(contacts)
     debugger
-    //dispatch(getContactsSuccess({contacts}))
+    dispatch(getContactsSuccess({contacts: contactsObject}))
   }
 })
 export default allContactsActions
