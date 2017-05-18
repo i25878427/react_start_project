@@ -9,7 +9,7 @@ const allContactsActions = (dispatch) => ({
 //                const contacts =  {contacts:[{Email: 'jrogers@burlington.com', Id: 'c123456788',  Name: 'Jack Rogers', Title: 'VP, Facilities'},{Email: 'jrogers1@burlington.com', Id: 'c123456785',  Name: 'Jack1 Rogers1', Title: 'VP1, Facilities1'}],Id: 'a12345678', Status: 'Success'}
 
     debugger
-    var contacts = document.getElementById('myAccountsField')
+    const contacts = document.getElementById('myAccountsField').value
     debugger
     dispatch(getContactsSuccess({contacts}))
   }
